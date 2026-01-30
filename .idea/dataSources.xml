@@ -15,5 +15,12 @@
       <jdbc-url>jdbc:mysql://mysql-33d76eb2-alustudent-26bb.f.aivencloud.com:18954/</jdbc-url>
       <working-dir>$ProjectFileDir$</working-dir>
     </data-source>
+    <data-source source="LOCAL" name="@localhost [2]" uuid="5e3f33a9-df1c-4ef0-b7d0-77cccfef29d7">
+      <driver-ref>mysql.8</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>com.mysql.cj.jdbc.Driver</jdbc-driver>
+      <jdbc-url>jdbc:mysql://localhost:3306</jdbc-url>
+      <working-dir>$ProjectFileDir$</working-dir>
+    </data-source>
   </component>
 </project>
