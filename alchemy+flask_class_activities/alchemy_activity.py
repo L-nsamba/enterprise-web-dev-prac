@@ -3,7 +3,8 @@ from sqlalchemy import text
 from sqlalchemy import  Column, Integer, String, BigInteger
 from sqlalchemy.orm import declarative_base
 
-
+engine = create_engine("mysql+pymysql://leon_workbench:leon%40alu.1@localhost:3306/hbnb_db")
+connection = engine.connect()
 Base = declarative_base()
 
 class AlgoAnalysis(Base):
@@ -19,8 +20,5 @@ class AlgoAnalysis(Base):
     time_complexity = Column(String(20), nullable=False)
     path_to_graph = Column(String(225), nullable=True)
 
-engine = create_engine("mysql+pymysql://leon_workbench:leon%40alu.1@localhost:3306/hbnb_db")
-
-connection = engine.connect()
 Base.metadata.create_all(engine)
 print("Connected successfully")
